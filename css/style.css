@@ -1,0 +1,11 @@
+canvas
+{
+    display: block;
+    margin: 0 auto;
+}
+
+
+.cbs{
+    border: solid 1px #000;
+    display: flex;
+}
