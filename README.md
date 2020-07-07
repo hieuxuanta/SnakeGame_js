@@ -1,2 +1,2 @@
 # SnakeGame_js
-This is snake game coded by me. I'm learning javascript in order to add more functions to this game. That will make the game more and more interesting. Thanks
+This is snake game coded by me. I'm learning javascript in order to add more functions to this game. That will make the game more and more interesting. Thanks!
