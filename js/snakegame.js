@@ -147,30 +147,34 @@ function draw() {
 
     //game over, snake crashes into the wall or eats his body
     if (snakeX < box || snakeX > 17 * box || snakeY < 3 * box || snakeY > 17 * box || collision(newHead, snake)) {
-        // clearInterval(game);
+        clearInterval(game);
         dead.play();
         dead.volume = 0.2;
         audioName.pause();
+        var cptext = document.getElementsByTagName("p");
+        document.getElementById("pplay").innerHTML = cptext[0].innerHTML + ' again';
+        
         // var r = confirm("Play again ? (OK/Cancel)");
         // if (r == true) {
             // init();
             
-            snake = [];
-            box = 32;
-            //create snake
+            // snake = [];
+            
+            // //create snake
 
-            snake[0] = {
-                x: 9 * box,
-                y: 10 * box
-            };
+            // snake[1] = {
+            //     x: 10 * box,
+            //     y: 10 * box
+            // };
 
-            //create food in random position
-            food = {
-                x: Math.floor(Math.random() * 17 + 1) * box,
-                y: Math.floor(Math.random() * 15 + 3) * box
-            };
+            // //create food in random position
+            // food = {
+            //     x: Math.floor(Math.random() * 17 + 1) * box,
+            //     y: Math.floor(Math.random() * 15 + 3) * box
+            // };
 
-            score = 0;
+            // score = 0;
+            
             
 
 
@@ -182,6 +186,7 @@ function draw() {
 
         // }
     }
+    
     snake.unshift(newHead);
 
     //score
