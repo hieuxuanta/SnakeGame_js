@@ -15,17 +15,26 @@
         <canvas id="snake" width="608" height="608">
 
         </canvas>
+        <h2>Snakegame_binzigo</h2>
         <div class="btn">
             <a href="index.html"> 
                 <button id="btnPlay">
                     <p id="pplay">Play</p>
                 </button>
             </a>
+            <button style="width: 125px;" id="btnPlay" onclick="viewHighScore(score)">
+                <p>High Score</p>
+            </button>
+            <button style="" id="btnPlay" onclick="viewHelp()">
+                <p>Help</p>
+            </button>
         </div>
         
-        <script src="./js/snakegame.js"></script>
+        <script src="./js/dt-snakegame.js"></script>
     </div>
-
+    <video autoplay muted loop id="myVideo">
+        <source src="/video/Tree_Branches_With_Little_Leaves.mp4" type="video/mp4">
+    </video>
 </body>
 
 </html>
