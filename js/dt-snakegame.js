@@ -154,7 +154,7 @@ function draw() {
 
 /**
  * MAIN PROCESSING
- */
+*/
 initDocListeners();
 init();
 game = setInterval(draw, 100);
